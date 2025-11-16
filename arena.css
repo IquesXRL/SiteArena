@@ -1,0 +1,996 @@
+/*Globais*/
+@font-face {
+    /*ARRUMAR BOLD*/
+    font-family: "DinNextLTPro";
+    src: url("/Fonte/DIN\ Next\ LT\ Pro\ Regular.otf") format("opentype");
+}
+*{
+    margin:0px;
+    font-family: 'DinNextLTPro';
+}
+a{
+    text-decoration: none;
+}
+.container{
+    padding: 64px 100px;
+}
+button{
+    cursor: pointer;
+}
+.button-contato{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 8px;
+    background-color:#22C55E ;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+.button-contato:hover{   
+    background-color: #fff;
+    color: #22C55E;
+    
+}
+
+/*Menu Header*/
+
+.header{
+    display: flex;
+    padding: 8px 100px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}
+.menu-logo{
+    width: 100px;
+}
+.menu-header{
+    display: flex;
+    gap:16px;
+}
+
+.menu-header li {
+    text-decoration: none;
+    list-style-type:none;
+}
+.menu-header li a {
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+.menu-header li a:hover{
+    color: #22C55E;
+}
+
+.menu-burger{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    display: none;
+}
+.line-burger{
+    height: 2px;
+    background-color: black;
+    width: 28px;
+}
+
+/*Sec 1 - Banner*/
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("imgArena/banner-quadra.webp");
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 214px);
+}
+.banner-title{
+    color: white;
+    font-size: 72px;
+    text-align: center;
+    width: 1200px;
+    font-weight: 300;
+}
+
+/*Sec 2 - Arenas*/
+.arenas{
+    background-image: url("imgArena/fundo-sec2.webp");
+    display: flex;
+    background-position: center center;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    gap: 64px;
+}
+.arena{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.arena>p{
+    font-size: 24px;
+    text-align: center;
+}
+.arena>p>a{
+    color: black;
+} .arena>p>a:hover{text-decoration: underline;}
+.tituloArena img{
+    width: 60px;
+}
+.tituloArena{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap:  12px;
+    justify-content: center;
+}
+.tituloArena p{
+    font-size: 40px;
+    font-weight: 600;
+    color: black;
+}
+
+/*Sec 3 - Modalidades*/
+.modalidades{
+    background-image: url("imgArena/fundo-modalidade.webp");
+    background-position: center top;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    row-gap: 32px;
+    column-gap: 32px;
+}
+.modalidades p{
+    width: 100%;
+    color: white;
+    font-size: 44px;
+    font-weight: 500;
+    text-align: center;
+}
+.modalidade{
+    background-color: white;
+    border-radius: 8px;
+    width: 300px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 16px;
+    gap: 16px;
+}
+.modalidade img{
+    width: 80px;
+}
+.modalidade h2{
+    font-size: 32px;
+}
+
+/*Sec 4 - Vantagens*/
+.vantagens{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    background-color: #fafafa;
+}
+.vantagens p{
+    width: 100%;
+    text-align: center;
+    font-size: 44px;
+    font-weight: bold;
+}
+.vantagem{
+    background-size: cover;
+    width: 580px;
+    height: 260px;
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    gap:20px;
+    border-radius: 8px;
+}
+.vantagem img{
+    width: 400px;
+}
+.vantagem p{
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: left;
+}
+.vantagem>h4{
+    font-size: 56px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+/*Sec 5 - Slider*/
+.sliderSec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.sliderSec h2{
+    font-size: 36px;
+    font-weight: 400;
+}
+.sliderSec p{
+    color: #22C55E;
+    font-size: 56px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.sliderControl{
+    display: flex;
+    gap: 16px;
+}
+.slider {
+    position: relative;
+    width: 80%;
+    width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sliderImg {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.slide {
+    height: 500px;
+    min-width: 100%;
+    background-size: cover;
+    background-position: center center;
+    box-sizing: border-box;
+}
+.setNav{
+    background: none;
+    border: none;
+    font-size: 28px;
+    font-weight: 700;
+    
+}
+
+
+/*sec 6 - Treinadores */
+.treinadores{
+    background-color: #22C55E;
+    display: flex;
+    flex-direction: column;
+}
+.treinadores h2{
+    text-align: center;
+    color: black;
+    font-size: 44px;
+    font-weight: 900;
+}
+.treinadores p{
+    color: #fff;
+    font-size: 36px;
+    text-align: center;
+}
+.curriculos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 64px;
+}
+.professor{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    
+}
+.professor p{
+    color: #fff;
+}
+.foto-professor{
+    background-size: cover;
+    background-position: center center;
+    width: 400px;
+    height: 500px;
+}
+.curriculo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: #13A538 ;
+    opacity: 0%;
+    transition: 0.5s;
+}
+.curriculo:hover{
+    opacity: 100%;
+}
+.curriculo ul{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 8px 32px;
+}
+.curriculo li{
+    color: #fff;
+    font-size: 20px;
+}
+
+.professor h3{
+    font-size: 24px;
+}
+.professor p{
+    text-align: left;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+/*Sec 7 - Planos*/
+.planos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+.planos h3{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.planos h3 strong{
+    color: #22C55E;
+    font-style: italic;
+}
+
+.planos-control{
+    display:flex ;
+    gap: 16px;
+}
+.button-control{
+    padding: 16px;
+    color: black;
+    background-color: #fff;
+    font-size: 36px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 2px 2px 6px black ;
+    font-weight: bold;
+}
+.button-control:hover{
+    background-color: #13A538;
+    color: #fff;
+
+}
+
+.precosAulas, .precosDayUse, .precosClubinho{
+    display: none;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
+} 
+
+.bloco-preco{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    border: solid 1px #dedede;
+    gap: 16px;
+    padding: 16px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+}
+.mensal{
+    color: #13A538;
+    font-size: 20px;
+}
+.valorMensal{
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+.valorMensal strong{
+    font-size: 48px;
+}
+.horarios{
+    min-height: 204px;
+    justify-content: space-between;
+}
+
+.bloco-preco button{
+    width: 100%;
+    font-size: 20px;
+    color: #13A538;
+    background-color: #EDFFE7;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+} .bloco-preco button:hover{
+    background-color: #22C55E;
+    color: #fff;
+}
+
+.ganhaClubinho{
+    font-size: 24px;
+    width: 100%;
+    text-align: center;
+}
+.aluguelRaquetes{
+    width: 100%;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+.precosClubinho>h3{
+    font-size: 46px;
+    color: #22C55E;
+    margin-top: 16px;
+    text-align: center;
+}
+
+/* Sec 7 - Planos JS*/
+.exibePrecos{
+    display: flex;
+}
+
+
+/*Sec 8 - Slider Society*/
+.melhoresCampos{
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+.melhoresCampos h2{
+    font-size: 40px;
+    text-align: center;
+}
+.melhoresCampos h2 strong{
+    color: #13A538;
+}
+
+.sliderSociety {
+    position: relative;
+    width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 32px;
+    border-radius: 8px;
+}
+
+.sliderImgSociety {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    
+}
+
+.slideSociety {
+    height: 500px;
+    min-width: 100%;
+    background-size: cover;
+    background-position: center center;
+    box-sizing: border-box;
+    
+}
+.setNavSociety{
+    background: none;
+    border: none;
+    font-size: 28px;
+    font-weight: 700;    
+}
+
+
+/*Sec 8 - Arena 1 e 2*/
+.arenaAluguel{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 32px;
+    column-gap: 24px;
+    align-items: center;
+    justify-content: center;
+}
+.arenaAluguel>p{
+    width: 100%;
+    text-align: center;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 48px;
+}
+.aluguel{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*Sec 9 - Esclinha Slider*/
+.escolinha{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.escolinha>h2{
+    font-size: 32px;
+    color: #22C55E;
+    font-style: italic;
+}
+.escolinha>p{
+    font-size: 48px;
+    text-align: center;
+}
+.escolinha>p span{
+    font-weight: bold;
+}
+
+.sliderEscolinha {
+    width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 32px;
+    border-radius: 8px;
+    margin-top: 32px;
+}
+
+.sliderImgEscolinha {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.slideEscolinha {
+    height: 500px;
+    min-width: 100%;
+    background-size: cover;
+    background-position: center center;
+    box-sizing: border-box;
+    
+}
+.setNavEscolinha{
+    background: none;
+    border: none;
+    font-size: 28px;
+    font-weight: 700;
+    
+}
+
+
+/*Sec 10 - Treinador escolinha*/
+.treinadorEscolinha{
+    display: flex;flex-direction: column;
+    background-color: #13A538;
+    justify-content: center;
+    align-items: center;
+}
+.tituloTreinador{
+    font-size: 46px;
+    font-weight: bold;
+    text-align: center;
+}
+.subTituloTreinador{
+    color: #fff;
+    font-size:36px ;
+    text-align: center;
+}
+.subTituloTreinador>span{
+    font-weight: bold;
+}
+
+.treinador{
+    display: flex;
+    width: 1200px;
+    align-items: top;
+    justify-content: center;
+    gap: 64px;
+    margin-top: 64px;
+}
+.cvTreinador{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.cvTreinador>p{
+    color: #fff;
+    font-size: 24px;
+}
+.cvTreinador p span{
+    font-weight: bold;
+}
+
+/*Sec 11- Horários Escolinha*/
+.escolinha{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
+    background-color: #fafafa;
+}
+.escolinha>h3{
+    font-size: 50px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+.escolinha>h3>span{
+    color: #22C55E;
+}
+
+.horarios{
+    display: flex;
+    gap: 32px;
+}
+
+/*Sec 11 Valores escolinha*/
+.valores{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-top: 64px;
+}
+.valores>h3, .valores>span{
+    color: #22C55E;
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+.valores>p{
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+.valores>p>span{
+    font-weight: bold;
+}
+
+/*Sec 12 - ctaBanner*/
+.ctaBanner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("imgArena/ctaBanner.webp");
+    background-size: cover;
+    background-position: center center;
+    gap: 16px;
+    height: 400px;
+}
+.ctaBanner>h3{
+    font-size: 56px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+.ctaBanner>h2{
+    color: #fff;
+    font-size: 26px;
+    text-align: center;
+}
+.ctaBanner>a>button{
+    background-color: #fff;
+    font-size: 20px;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: bold;
+} .ctaBanner>a>button:hover{
+    background-color: #22C55E;
+    color: #fff
+}
+
+/*Footer*/
+footer{
+    background-color: #22C55E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 100px;
+}
+footer>img{
+    width: 120px;
+}
+footer>ul{
+    display: flex;
+    gap: 12px;
+}
+footer>ul>li{
+    color: #fff;
+    list-style-type: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+footer>p{
+    color: #fff;
+}
+footer a{
+    color: white;
+} 
+.zapIcon{
+    position: fixed;
+    width: 72px;
+    bottom: 12px;
+    right: 12px;
+    cursor: pointer;
+}
+
+/*Politica de privacidade e termos de uso*/
+.bodyPrivacy{
+    padding: 32px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.btnPrivacy{
+    width: 100px;
+    border: none;
+    padding: 8px 12px;
+    background-color: #22c55e;
+    font-size: 20px;
+    border-radius: 4px;
+} .btnPrivacy:hover{
+    background-color: #13A538;
+}
+
+/*Tablet*/
+@media (width < 1284px){
+    .sliderControl{
+        width: 100%;
+       }
+
+    .curriculos{
+        display: flex;
+        flex-direction: column
+    }
+
+    .treinador{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .horarios{
+        flex-direction: column;
+    }
+    /*Footer*/
+    footer{
+        flex-direction: column;
+        gap: 48px;
+    }
+    footer ul{
+        flex-direction: column;
+        padding-left: 0px;
+    }
+    footer li{
+        text-align: center;
+    }
+}
+/*Mobile*/
+@media(width < 900px) {
+    /*global*/
+    .container{
+        padding: 64px 32px;
+    };
+
+    .mensal{
+        font-size: 20px;
+    }
+
+    /*Header*/
+    .header{
+        padding: 8px 64px;
+        justify-content: space-between;
+    }
+    .menu-header{
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        transform: translate(-64px, 44px);
+        background-color: white;
+        
+    }
+    /*Menu Burger*/
+    .exibe-dropdown{
+        display: flex;
+    }
+    .menu-burger{
+        display: flex;
+        cursor: pointer;
+    }
+    nav ul{
+        padding: 0px;
+    }
+    nav ul li{
+        width: 120px;
+        padding: 8px 16px;
+        text-align: center;
+    }
+
+    /*Sec 1 Banner*/
+    .banner{
+        height: 320px;
+    }
+    .banner-title{
+        font-size: 44px;
+    }
+
+    /*Sec 2 - Arenas*/
+    .arenas{
+        flex-direction: column;
+    }
+    .arena{
+        width: 100%;
+    }
+    .tituloArena{
+        display: flex;
+        flex-direction: column;
+    }
+    .tituloArena>img{
+        transform: rotate(270deg);
+    }
+    .tituloArena p{
+        font-size: 32px;
+    }
+    .arena>iframe{
+        width: 100%;
+    }
+
+    /*Sec 4 - Vantagens*/
+    .vantagem{
+        height: 100%;
+    }
+    .vantagem, .vantagem img{
+        width: 100%;
+    }
+    .vantagens>p{
+        font-size: 36px;
+    }
+
+    /*Sec 5 - Slider*/
+    .sliderSec h2,p{
+        text-align: center
+    }
+    .sliderSec h2{
+        font-size: 24px;
+    }
+    .sliderSec p{
+        font-size: 36px;
+    }
+    .slider{
+        width: 100%;
+    }
+    .sliderImg{
+        height: 300px;
+    }
+   
+   .slide{
+    height: 100%;
+   }
+   
+    
+    /*Se 6 - Professores*/
+    
+    .professor{
+        align-items: center;
+    }
+    .foto-professor{
+        width: 360px;
+        height: 380px;
+    }
+    .treinadores h2{
+        font-size: 36px;
+        padding-bottom: 16px;
+    }
+    .treinadores p{
+        font-size: 24px;
+    }
+
+    /*sec 7  - Planos*/
+    .exibePrecos{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    } 
+    .planos h3{
+        font-size: 36px;
+        text-align: center;
+    }
+    .planos-control{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .button-control{
+        font-size: 20px;
+    }
+
+    /*Sec 8 Slider Society*/
+    .sliderSociety{
+        width: 100%;
+    }
+    .sliderImgSociety{
+        height: 300px;
+    }
+    .slideSociety{
+        height: 100%;
+    }
+   
+
+    /*Sec 9 Slider Escolinha*/
+    .sliderEscolinha{
+        width: 100%;
+    }
+    .sliderImgEscolinha{
+        height: 300px;
+    }
+    .escolinha h2{
+        text-align: center;
+    }
+    .escolinha>p{
+        font-size: 36px;
+    }
+    .slideEscolinha{
+        height: 100%;
+    }
+
+    /*sec 10 - Treinador Escolinha*/
+    
+    .tituloTreinador{
+        font-size: 24px;
+    }
+    .subTituloTreinador{
+        font-size: 36px;
+        margin-top: 16px;
+    }
+
+    /*Sec 11 - Horarios*/
+    
+    .escolinha h3{
+        font-size: 36px;
+    }
+
+    /*Sec 12 - Banner*/
+    .ctaBanner h3{
+        font-size: 48px;
+    }
+
+    /*Politica de privacidade e termos de uso*/
+    .bodyPrivacy{
+        padding: 32px 16px;
+        justify-content: center;
+        align-items: center;
+    }
+    .bodyPrivacy h2{
+        text-align: center;
+    }
+    
+    
+    
+}

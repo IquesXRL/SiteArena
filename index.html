@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arena Sports</title>
+    <link rel="icon" type="image/x-icon" href="imgArena/favicon.webp"/>
+
+    <link rel="stylesheet" href="arena.css"/>
+    <script src="arena.js" defer></script>
+</head>
+<body>
+    <!--Header-->
+    <div class="header">
+        <img src="imgArena/logoarea.webp" class="menu-logo"/>
+
+        <nav>
+            <ul class="menu-header ">
+                <li><a href="#aarena">A Arena</a></li>
+                <li><a href="#beachTennis">Beach Tennis</a></li>
+                <li><a href="#futebol">Futebol</a></li>
+                <li><a href="#escolinha">Escolinha</a></li>
+                
+            </ul>
+            <div class="menu-burger" id="menuBurger" onclick="exibeDropdown()">
+                <div class="line-burger"></div>
+                <div class="line-burger"></div>
+                <div class="line-burger"></div>
+                <div class="line-burger"></div>
+            </div>
+        </nav>
+    </div>
+
+    <!--Sec 1 - Banner-->
+    <div class="banner container">
+        <h1 class="banner-title">
+            <strong>As melhores quadras</strong>
+             de Campinas estão na 
+             <strong>Arena Sports</strong>
+        </h1>
+    </div>
+
+    <!--Sec 2 - Arenas 1 e 2-->
+    <div class="arenas container" id="aarena">
+        <div class="arena">
+            <div class="tituloArena">
+                <img src="imgArena/arenasIcon.webp"/>
+                <p>Sports Arena 1</p>
+            </div>
+            <iframe width="460" height="515" src="https://www.youtube.com/embed/OEkQ9rtViWQ?si=f3qRdkGBNZpyD9wI&amp;start=10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p><a href="https://maps.app.goo.gl/zggn5SDoDfJZLH6J7" target="_blank">R. Alfredo da Costa Figo, 21 - Fazenda Santa Cândida, Campinas - SP, 13087-534</a></p>
+        </div>
+        
+        <div class="arena">
+            <div class="tituloArena">
+                <img src="imgArena/arenasIcon.webp"/>
+                <p>Sports Arena 2</p>
+            </div>
+            <iframe width="460" height="515" src="https://www.youtube.com/embed/ECWgNChfyjo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+            <p><a href="https://maps.app.goo.gl/N1xegKUaPxW2yFJTA" target="_blank">Rua Leonor Ponessi Cappelli 461 - Fazenda Santa Cândida, Campinas - SP, 13087-579</a></p>
+        </div>
+    </div>
+    
+    <!--Sec 3 - Modalidades-->
+    <div class="modalidades container">
+        <p>Selecione a sua modalidade:</p>
+        <div class="modalidade">
+            <img src="imgArena/bola-tenis.webp"/>
+            <h2>Beach Tennis</h2>
+        </div>
+
+        <div class="modalidade">
+            <img src="imgArena/bola-fut.webp"/>
+            <h2>Society</h2>
+        </div>
+
+        <div class="modalidade">
+            <img src="imgArena/bola-escolinha.webp"/>
+            <h2>Escolinha de futebol</h2>
+        </div>
+    </div>
+
+    <!--Sec 4 - Vantagens-->
+    <div class="vantagens container">
+        <p>Vantagens Arena Sports</p>
+        <div class="vantagem" style="background-image: url(imgArena/fut.webp);">
+            <img src="imgArena/filmaeu.webp"/>
+            <p>Confira as jogadas da partida</p>
+            <a href="https://filmaeu.com.br/" target="_blank"><button class="button-contato">Assistir</button></a>
+        </div>
+        <div class="vantagem" style="background-image: url(imgArena/tenis.webp);">
+            <h4>Bem-estar</h4>
+            <p>Aceitamos Wellhub (Gympass) e Totalpass para day use. Sua saúde e bem-estar em primeiro lugar!</p>
+            <a href="https://wa.me/19998734633" target="_blank"><button class="button-contato">Entre em contato</button></a>
+        </div>
+    </div>
+
+    <!--Sec 5 - Slider-->
+    <div class="sliderSec container" >
+        <h2>Confira nossas quadras de <strong>beach tennis</strong></h2>
+        <p>Diversão e esporte para todos</p>
+
+          <div class="sliderControl">  
+            <button class="prev setNav" onclick="prevSlideBT()">&#10094;</button>
+            <div class="slider">
+                    <div class="sliderImg">
+                        <div class="slide" style="background-image: url(/imgArena/placebeach.webp);"></div>
+                        <div class="slide" style="background-image: url(/imgArena/placekids.webp);"></div>
+                        <div class="slide" style="background-image: url(/imgArena/placetenis.webp);"></div>
+                    </div>  
+            </div>
+            <button class="next setNav" onclick="nextSlideBT()">&#10095;</button>
+        </div> 
+            
+
+            <a href="https://wa.me/19998734633" target="_blank"><button class="button-contato">Entre em contato</button></a>
+    </div>
+
+    <!--Sec 6 - Treinadores-->
+    <div class="treinadores container">
+        <h2>Conheça nossos treinadores de beach tennis</h2>
+        <p>Aprenda com <strong>os melhores</strong> e eleve seu jogo</p>
+
+        <div class="curriculos">
+
+            <div class="professor">
+                <div class="foto-professor" style="background-image: url(/imgArena/arthur.webp);">
+                    <div class="curriculo">
+                        <ul>
+                            <li>Clínica com André Baran e Vini Font</li>
+                            <li>Jogador de Beach Tennis desde 2017 (categoria C)</li>
+                            <li>Teve aulas com Felipe Vallim e Hugo Russo</li>
+                            <li>Melhor ranking ITF 831º e atual 2292º</li>
+                            <li>Atual 65º do Circuito Beach Tennis</li>
+                        </ul>
+                    </div>
+                </div>
+                <h3>Arthur Conti</h3>
+                <p>Professor</p>
+                
+            </div>
+
+            <div class="professor">
+                <div class="foto-professor" style="background-image: url(/imgArena/lael.webp);">
+                    <div class="curriculo">
+                        <ul>
+                            <li>Curso de capacitação CRAB módulos 1 e 2</li>
+                            <li>Curso de capacitação em Beach Tennis módulos Verde, Amarelo e Azul pela CBT/ITF</li>
+                            <li>Treinamento para professores Lucas Sousa</li>
+                            <li>Professor de Beach Tennis desde 2021</li>
+                        </ul>
+                    </div>
+                </div>
+                <h3>Lael Romanini</h3>
+                <p>Professor</p>
+                
+            </div>
+
+            <div class="professor">
+                <div class="foto-professor" style="background-image: url(/imgArena/rafael.webp);">
+                    <div class="curriculo">
+                        <ul>
+                            <li>Educação Física - Unesp/Bauru</li>
+                            <li>Treinador de Tênis desde 2012</li>
+                            <li>Curso de capacitação em Beach Tennis módulos Verde, Amarelo e Azul pela CBT/ITF</li>
+                            <li>Atleta de beach tennis na categoria profissional</li>
+                        </ul>
+                    </div>
+                </div>
+                <h3>Rafael Silva</h3>
+                <p>Professor</p>
+               
+            </div>
+        </div>
+        
+    </div>
+
+    <!--Sec 7 - Planos-->
+    <div class="planos container" id="beachTennis">
+        <h3>Planos <strong>beach tennis</strong></h3>
+
+        <div class="planos-control">
+            <button class="button-control" onclick="exibeAulas()">Aulas</button>
+            <button class="button-control" onclick="exibeDayUse()">Day Use</button>
+            <button class="button-control" onclick="exibeClubinho()">Clubinho</button>
+        </div>
+
+        <div class="precosAulas ">
+            <!--Valores-->
+            <div class="bloco-preco">
+                <p class="mensal">Mensal</p>
+                <p class="valorMensal"><strong>R$280</strong>,00</p>
+                <a href="https://wa.me/19998734633" target="_blank"><button>Entre em contato</button></a>
+            </div>
+
+            <div class="bloco-preco">
+                <p class="mensal">Quadrimestral</p>
+                <p class="valorMensal"><strong>R$260</strong>/mês</p>
+                <a href="https://wa.me/19998734633" target="_blank"><button>Entre em contato</button></a>
+            </div>
+
+            <div class="bloco-preco">
+                <p class="mensal">Semestral</p>
+                <p class="valorMensal"><strong>R$240</strong>/mês</p>
+                <a href="https://wa.me/19998734633" target="_blank"><button>Entre em contato</button></a>
+            </div>
+
+            <p class="ganhaClubinho">Em todos os planos de aula <strong>você ganha o Clubinho,</strong> que permite a utilização das quadras a vontade!</p>
+            <p class="aluguelRaquetes">Temos aluguel de raquetes por R$20/diária</p>
+
+            <!--Horários-->
+            <div class="bloco-preco horarios" style="width: 200px;">
+                <p class="mensal" >Segunda</p>
+                <div>
+                    <p class="valorMensal">14h às 22h</p>
+                </div>
+                <a href="https://wa.me/19998734633" target="_blank"><button>Entre em contato</button></a>
+            </div>
+
+            <div class="bloco-preco horarios" style="width: 200px;">
+                <p class="mensal">Terça e Quinta</p>
+                <div>
+                    <p class="valorMensal">8h às 11h</p>
+                    <p class="valorMensal">16h às 22h</p>
+                </div>
+                <a href="https://wa.me/19998734633" target="_blank"><button>Entre em contato</button></a>
+            </div>
+
+            <div class="bloco-preco horarios" style="width: 200px;">
+                <p class="mensal">Sexta</p>
+                <div>
+                    <p class="valorMensal">8h às 11h</p>
+                    <p class="valorMensal">16h às 21h</p>
+                </div>
+                <a href="https://wa.me/19998734633" target="_blank"><button>Entre em contato</button></a>
+            </div>
+
+            <div class="bloco-preco horarios" style="width: 200px;">
+                <p class="mensal">Sábado e domingo</p>
+                <div>
+                    <p class="valorMensal">8h às 14h</p>
+                </div>
+                <a href="https://wa.me/19998734633" target="_blank"><button>Entre em contato</button></a>
+            </div>
+
+
+        </div>
+
+        <div class="precosDayUse ">
+            <div class="bloco-preco">
+                <p class="mensal">Day Use</p>
+                <p class="valorMensal"><strong>R$290</strong>,00</p>
+                <a href="https://wa.me/19998734633" target="_blank"><button>Entre em contato</button></a>
+            </div>
+
+            <p class="ganhaClubinho">Pague um valor único e jogue o dia inteiro! Disponível todos os dias na Arena Sports 1.</p>
+            <p class="aluguelRaquetes">Aceitamos Wellhub (Gympass) e Totalpass!</p>
+
+
+        </div>
+
+        <div class="precosClubinho ">
+            <h3>Utilização das quadras à vontade!</h3>
+            <p class="ganhaClubinho">Incluso em todos os planos de aula de Beach Tennis.</p>
+            <p class="aluguelRaquetes">Aceitamos Wellhub (Gympass) e Totalpass!</p>
+
+        </div>
+
+    </div>
+
+    <!--Sec 8  - Slider ;melhores campos-->
+    <div class="melhoresCampos container" id="futebol">
+        <h2>Os <strong>melhores campos</strong> de society de Campinas</h2>
+        <div class="sliderControl">
+            <button class="prevSociety setNavSociety" onclick="prevSlideSociety()">&#10094;</button>
+            <div class="sliderSociety">
+                <div class="sliderImgSociety">
+                    <div class="slideSociety" style="background-image: url(/imgArena/placetenis.webp);"></div>
+                    <div class="slideSociety" style="background-image: url(/imgArena/placebeach.webp);"></div>
+                    <div class="slideSociety" style="background-image: url(/imgArena/placekids.webp);"></div>
+                </div> 
+            </div>
+            <button class="nextSociety setNavSociety" onclick="nextSlideSociety()">&#10095;</button>
+        </div>
+
+        
+
+        <div class="arenaAluguel">
+            <p>Arena 1</p>
+            <div class="bloco-preco">
+                <p class="mensal">Aluguel</p>
+                <p class="valorMensal"><strong>R$200</strong>/hora</p>
+                <p class="aluguel">Aluguel</p>
+                <a href="https://wa.me/19998734633" target="_blank"><button>Entre em contato</button></a>
+            </div>
+            <div class="bloco-preco">
+                <p class="mensal">Mensalidade</p>
+                <p class="valorMensal"><strong>R$730</strong>/mês</p>
+                <p class="aluguel">1h por semana</p>
+                <a href="https://wa.me/19998734633" target="_blank"><button>Entre em contato</button></a>
+            </div>
+        </div>
+        <div class="arenaAluguel">
+            <p>Arena 2</p>
+            <div class="bloco-preco">
+                <p class="mensal">Mensal</p>
+                <p class="valorMensal"><strong>R$230</strong>/hora</p>
+                <p class="aluguel">Aluguel</p>
+                <a href="https://wa.me/19998734633" target="_blank"><button>Entre em contato</button></a>
+            </div>
+            <div class="bloco-preco">
+                <p class="mensal">Mensal</p>
+                <p class="valorMensal"><strong>R$850</strong>/mês</p>
+                <p class="aluguel">1h por semana</p>
+                <a href="https://wa.me/19998734633" target="_blank"><button>Entre em contato</button></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sec 9 - Slider Escolinha-->
+     <div class="escolinha container" >
+        <h2>Escolinha de futebol scoiety</h2>
+        <p>Formando <span>pessoas e atletas</span> através do esporte</p>
+
+        <div class="sliderControl">
+            <button class="prevEscolinha setNavEscolinha" onclick="prevSlideEscolinha()">&#10094;</button>
+            <div class="sliderEscolinha">
+                <div class="sliderImgEscolinha">
+                    <div class="slideEscolinha" style="background-image: url(/imgArena/placekids.webp);"></div>
+                    <div class="slideEscolinha" style="background-image: url(/imgArena/placetenis.webp);"></div>
+                    <div class="slideEscolinha" style="background-image: url(/imgArena/placebeach.webp);"></div>
+                </div>    
+            </div>
+            <button class="nextEscolinha setNavEscolinha" onclick="nextSlideEscolinha()">&#10095;</button>
+        </div>
+        
+        
+
+        <a href="https://wa.me/19998734633" target="_blank"><button class="button-contato">Entre em contato</button></a>
+
+     </div>
+
+     <!-- Sec 10 - Treinador escolinha-->
+      <div class="treinadorEscolinha container">
+
+        <p class="tituloTreinador">Conheça nossos treinadores da escolinha de futebol</p>
+        <p class="subTituloTreinador">Aprenda com <span>os melhores</span> e eleve seu jogo</p>
+
+        <div class="treinador">
+            <div class="professor">
+                <div class="foto-professor" style="background-image: url(/imgArena/myller.webp);"></div>
+                <h3>Myller Marques</h3>
+                <p>Professor</p>
+            
+            </div>
+
+            <div class="cvTreinador">
+                <p><span>Como atleta:</span><br>
+                    Nas categorias de base jogou pelo São Paulo FC, Guarani FC, Ponte Preta e Paulínia FC.</p>
+                <p><span>Profissionalmente,</span> jogou pelo Paulínia FC e Velo Clube de Rio Claro.</p>
+                <p><span>Como professor,</span> iniciou como estagiário na Escolinha do André Cruz.
+                De 2012 a 2019 foi professor e coordenador da Escolinha Oficial do Internacional RS em Campinas.
+                Em 2019 chegou na Arena Sports para assumir como professor da Escolinha oficial do Athletico Paranaense e, em 2022, junto com seu amigo Carlos Eduardo Porcari, abriu a Escolinha Arena FC.
+                </p>
+                
+            </div>
+        </div>
+      </div>
+
+    <!--Sec 11 - horarios escolinha-->
+    <div class="escolinha container" id="escolinha">
+        <h3><span>Dias e horários</span> da escolinha de futebol</h3>
+
+        <div class="horarios">
+            
+            <div class="bloco-preco horarios">
+                <p class="mensal">Segunda e Quarta</p>
+                <div>
+                    <p class="mensal">Nascidos entre 2012 à 2015</p>
+                    <p class="valorMensal">18h às 19h</p>
+                </div>
+                <a href="https://wa.me/19998734633" target="_blank"><button>Entre em contato</button></a>
+            </div>
+
+            <div class="bloco-preco horarios">
+                <p class="mensal">Terça e Quinta</p>
+                <div>
+                    <p class="mensal">Nascidos entre 2010 à 2014</p>
+                    <p class="valorMensal">17h às 18h</p>
+                </div>
+                <div>
+                    <p class="mensal">Nascidos entre 2013 à 2018</p>
+                    <p class="valorMensal">18h às 19h</p>
+                </div>
+                <div>
+                    <p class="mensal">Nascidos entre 2009 à 2013</p>
+                    <p class="valorMensal">19h às 20h</p>
+                </div>
+                <a href="https://wa.me/19998734633" target="_blank"><button>Entre em contato</button></a>
+            </div>
+
+            <div class="bloco-preco horarios">
+                <p class="mensal">Sábado</p>
+                <div>
+                    <p class="mensal">Nascidos entre 2015 à 2019</p>
+                    <p class="valorMensal">08h às 09h</p>
+                </div>
+                <a href="https://wa.me/19998734633" target="_blank"><button>Entre em contato</button></a>
+            </div>
+          
+        </div>
+
+        <div class="valores">
+            <h3>Valores da escolinha de futebol</h3>
+            <p>Uniforme - <span>R$ 160,00</span></p>
+            <span>+</span>
+
+            <div class="bloco-preco">
+                <p class="mensal">1 vez na semana</p>
+                <p class="valorMensal"><strong>R$130</strong>/mês</p>
+                <a href="https://wa.me/19998734633" target="_blank"><button>Entre em contato</button></a>
+            </div>
+            <div class="bloco-preco">
+                <p class="mensal">2 vezes na semana</p>
+                <p class="valorMensal"><strong>R$150</strong>/mês</p>
+                <a href="https://wa.me/19998734633" target="_blank"><button>Entre em contato</button></a>
+            </div>
+            <div class="bloco-preco">
+                <p class="mensal">3 vezes na semana</p>
+                <p class="valorMensal"><strong>R$165</strong>/mês</p>
+                <a href="https://wa.me/19998734633" target="_blank"><button>Entre em contato</button></a>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Sec 12 - ctaBanner-->
+    <div class="ctaBanner container">
+        <h3>Venha para Arena Sports</h3>
+        <h2>Aproveite nossas quadras de Society e Beach Tennis de classe mundial</h2>
+        <a href="https://wa.me/19998734633" target="_blank"><button>Entre em contato</button></a>
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <img src="imgArena/arenaWhite.webp"/>
+        <ul>
+            <li><a href="#aarena">A Arena</a></li>
+            <li><a href="#beachTennis">Beach Tennis</a></li>
+            <li><a href="#futebol">Futebol</a></li>
+            <li><a href="#escolinha">Escolinha</a></li>
+            <li><a href="terms.html">Termos de uso</a></li>
+            <li><a href="privacy.html">Política de Privacidade</a></li>
+        </ul>
+        <p>© 2020 Designership. All rights reserved.</p>
+
+        <a href="https://wa.me/19998734633" target="_blank">
+            <img class="zapIcon" src="imgArena/whatszapicon.webp"/>
+        </a>
+    </footer>
+
+</body>
+</html>
