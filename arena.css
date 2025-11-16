@@ -2,7 +2,7 @@
 @font-face {
     /*ARRUMAR BOLD*/
     font-family: "DinNextLTPro";
-    src: url("/Fonte/DIN\ Next\ LT\ Pro\ Regular.otf") format("opentype");
+    src: url("Fonte/DIN\ Next\ LT\ Pro\ Regular.otf") format("opentype");
 }
 *{
     margin:0px;
@@ -993,4 +993,5 @@ footer a{
     
     
     
+
 }
